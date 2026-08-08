@@ -1,0 +1,14 @@
+module m3qs
+
+singleton Colors 1.0 Colors.qml
+singleton Config 1.0 Config.qml
+
+ScallopedAnalogClock 1.0 components/ScallopedAnalogClock.qml
+StackedDigitalClock 1.0 components/StackedDigitalClock.qml
+PillDigitalClock 1.0 components/PillDigitalClock.qml
+WorldClock 1.0 components/WorldClock.qml
+SpringBehavior 1.0 components/common/SpringBehavior.qml
+EffectBehavior 1.0 components/common/EffectBehavior.qml
+TonalSurface 1.0 components/common/TonalSurface.qml
+Digit 1.0 components/common/Digit.qml
+MotionBlurWrapper 1.0 components/common/MotionBlurWrapper.qml

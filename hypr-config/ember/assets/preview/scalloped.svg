@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141218" />
+      <stop offset="100%" stop-color="#0F0D13" />
+    </linearGradient>
+    <radialGradient id="faceGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a2730" />
+      <stop offset="100%" stop-color="#1A181E" />
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="300" height="300" rx="28" fill="url(#bgGrad)" />
+
+  <!-- 12-lobed scalloped face -->
+  <path d="
+    M 262.0 150.0
+    C 262.0 163.7, 248.8 162.2, 245.2 175.5
+    C 241.6 188.8, 253.9 194.1, 247.0 206.0
+    C 240.1 217.9, 229.4 210.0, 219.7 219.7
+    C 210.0 229.4, 217.9 240.1, 206.0 247.0
+    C 194.1 253.9, 188.8 241.6, 175.5 245.2
+    C 162.2 248.8, 163.7 262.0, 150.0 262.0
+    C 136.3 262.0, 137.8 248.8, 124.5 245.2
+    C 111.2 241.6, 105.9 253.9, 94.0 247.0
+    C 82.1 240.1, 90.0 229.4, 80.3 219.7
+    C 70.6 210.0, 59.9 217.9, 53.0 206.0
+    C 46.1 194.1, 58.4 188.8, 54.8 175.5
+    C 51.2 162.2, 38.0 163.7, 38.0 150.0
+    C 38.0 136.3, 51.2 137.8, 54.8 124.5
+    C 58.4 111.2, 46.1 105.9, 53.0 94.0
+    C 59.9 82.1, 70.6 90.0, 80.3 80.3
+    C 90.0 70.6, 82.1 59.9, 94.0 53.0
+    C 105.9 46.1, 111.2 58.4, 124.5 54.8
+    C 137.8 51.2, 136.3 38.0, 150.0 38.0
+    C 163.7 38.0, 162.2 51.2, 175.5 54.8
+    C 188.8 58.4, 194.1 46.1, 206.0 53.0
+    C 217.9 59.9, 210.0 70.6, 219.7 80.3
+    C 229.4 90.0, 240.1 82.1, 247.0 94.0
+    C 253.9 105.9, 241.6 111.2, 245.2 124.5
+    C 248.8 137.8, 262.0 136.3, 262.0 150.0
+    Z"
+    fill="url(#faceGrad)" stroke="#49454F" stroke-width="1.2" opacity="0.95" />
+
+  <!-- Hour dots at each lobe peak -->
+  <circle cx="262.0" cy="150.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="247.0" cy="206.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="206.0" cy="247.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="150.0" cy="262.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="94.0" cy="247.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="53.0" cy="206.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="38.0" cy="150.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="53.0" cy="94.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="94.0" cy="53.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="150.0" cy="38.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="206.0" cy="53.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+  <circle cx="247.0" cy="94.0" r="2.5" fill="#CAC4D0" opacity="0.3" />
+
+  <!-- Hour Hand (10 o'clock position) -->
+  <g transform="translate(150, 150) rotate(305)">
+    <rect x="-10" y="-70" width="20" height="70" rx="10" fill="#D0BCFF" />
+  </g>
+
+  <!-- Minute Hand (10 minutes = 2 o'clock) -->
+  <g transform="translate(150, 150) rotate(60)">
+    <rect x="-6" y="-100" width="12" height="100" rx="6" fill="#CCC2DC" />
+  </g>
+
+  <!-- Orbiting Seconds Dot (~20s position, orbitR = 87px) -->
+  <circle cx="225.7" cy="193.7" r="6" fill="#EFB8C8" filter="url(#glow)" />
+
+  <!-- Center Pin Cap -->
+  <circle cx="150" cy="150" r="10" fill="#211F26" stroke="#49454F" stroke-width="1" />
+  <circle cx="150" cy="150" r="4.5" fill="#D0BCFF" />
+</svg>
