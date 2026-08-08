@@ -1,0 +1,34 @@
+[
+  {
+    "id": 8,
+    "actions": [],
+    "appIcon": "",
+    "appName": "notify-send",
+    "body": "Image opened in browser successfully",
+    "image": "",
+    "summary": "Google Lens",
+    "time": 1786171728852,
+    "urgency": "1",
+    "historyPriority": 0,
+    "replaceKey": "",
+    "cachedAppIcon": "",
+    "cachedImage": "",
+    "isCached": false
+  },
+  {
+    "id": 7,
+    "actions": [],
+    "appIcon": "",
+    "appName": "notify-send",
+    "body": "Uploading image for analysis...",
+    "image": "",
+    "summary": "Google Lens",
+    "time": 1786171728045,
+    "urgency": "1",
+    "historyPriority": 0,
+    "replaceKey": "",
+    "cachedAppIcon": "",
+    "cachedImage": "",
+    "isCached": false
+  }
+]
