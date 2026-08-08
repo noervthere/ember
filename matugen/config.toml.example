@@ -1,0 +1,7 @@
+[config]
+[config.wallpaper]
+set = false
+
+[templates.m3qs]
+input_path = "~/.config/quickshell/m3qs/matugen/templates/colors.qml"
+output_path = "~/.config/quickshell/m3qs/Colors.qml"

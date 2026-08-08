@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141218" />
+      <stop offset="100%" stop-color="#0F0D13" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="120" rx="28" fill="url(#bgGrad)" />
+
+  <g transform="translate(150, 42)">
+    <!-- Hour Pill (surfaceContainer #211F26) -->
+    <g transform="translate(-85, 0)">
+      <rect x="-35" y="-28" width="70" height="56" rx="28" fill="#211F26" />
+      <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="600" fill="#E6E0E9" text-anchor="middle" dominant-baseline="middle">10</text>
+    </g>
+
+    <!-- Minute Pill (primaryContainer #4F378B) -->
+    <g transform="translate(-10, 0)">
+      <rect x="-35" y="-28" width="70" height="56" rx="28" fill="#4F378B" />
+      <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="600" fill="#EADDFF" text-anchor="middle" dominant-baseline="middle">45</text>
+    </g>
+
+    <!-- AM/PM Pill (surfaceContainerHigh #2B2930) -->
+    <g transform="translate(60, 0)">
+      <rect x="-24" y="-28" width="48" height="56" rx="24" fill="#2B2930" />
+      <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="bold" fill="#CAC4D0" text-anchor="middle" dominant-baseline="middle">PM</text>
+    </g>
+  </g>
+
+  <!-- Date Pill below -->
+  <g transform="translate(150, 92)">
+    <rect x="-60" y="-14" width="120" height="28" rx="14" fill="#2B2930" />
+    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="bold" fill="#CAC4D0" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.8">MON, JUL 20</text>
+  </g>
+</svg>
